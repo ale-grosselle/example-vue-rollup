@@ -1,0 +1,10 @@
+@import '../../commons/scss/imports/thronColorsVariables';
+
+.btn {
+	//Thron error: Material design button must be upper case:
+	text-transform: none;
+	&.fc-gray {
+		color: $text-lightgrey;
+		background-color: $light-bg1;
+	}
+}
