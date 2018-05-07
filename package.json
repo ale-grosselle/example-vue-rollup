@@ -66,10 +66,8 @@
     "vue-template-validator": "^1.1.5"
   },
   "scripts": {
-    "dev:vue": "node build/scripts/build.js vue",
+    "dev": "node build/scripts/build.js vue",
     "build": "node build/scripts/build-prod.js && node build/scripts/build-prod.js vanilla && flow stop",
-    "doc:website": "node build/scripts/documentation.js && pug doc-website/pug/**.pug --out dist/docs",
-    "doc:jsdoc": "documentation build src/** -f html -o dist/docs",
     "flow-type": "flow-typed installstyle-inject  --ignoreDeps dev",
     "eslint-error": "eslint --ext .js,.vue src test && flow stop",
     "eslint-fix": "eslint --ext .js,.vue src test --fix && flow stop"
