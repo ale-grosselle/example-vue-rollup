@@ -43,6 +43,7 @@ const UMD_OUTPUT = {
 		includePaths({
 			paths: ['src']
 		}),
+		vue({css: true}),
 		json({
 			exclude: 'node_modules'
 		}),
@@ -56,7 +57,6 @@ const UMD_OUTPUT = {
 				loadPaths: [BASE_PATH]
 			})]
 		}), //postcss with plugins
-		vue({css: true}),
 		babel({ include: "src/**" }), // see .babelrc
 		resolve(), // so Rollup can find node_modules
 		commonjs(), // so Rollup can convert `ms` to an ES module
@@ -77,6 +77,7 @@ const ES_OUTPUT = {
 		includePaths({
 			paths: ['src']
 		}),
+		vue({css: true}),
 		json({
 			exclude: 'node_modules'
 		}),
@@ -89,7 +90,6 @@ const ES_OUTPUT = {
 				loadPaths: [BASE_PATH]
 			})]
 		}),
-		vue({css: true}),
 		babel({ include: "src/**" }), // see .babelrc
 		BUILD_FOR_PRODUCTION && filesize() // show bundle size in console output
 	]

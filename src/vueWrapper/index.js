@@ -1,4 +1,5 @@
 //@flow
 
 import Button from "vueWrapper/genericComponents/Button";
-export {Button};
+import Modal from "vueWrapper/genericComponents/Modal";
+export {Button, Modal};

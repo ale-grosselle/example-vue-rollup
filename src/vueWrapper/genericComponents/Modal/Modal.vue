@@ -10,12 +10,12 @@
 <script type="application/javascript">
 // @flow
 
-const name = "th-button";
+const name = "th-modal";
 
 //Button has only css, not JS.
 export default {
-	install: function(Vue:any){
-		Vue.component(name, this);
+	install: function(Vue){
+		Vue.component(name, BtnComponent);
     },
 	// declare the props
 	props: {
@@ -43,13 +43,13 @@ export default {
 		}
 	},
 	mounted: function() {
-		console.log("I AM BUTTON");
+		console.log("I AM MODAL");
 	}
 };
 </script>
 
 <style lang="scss">
-    h1.button{
+    h1.modal{
         background-color: red;
     }
 </style>
